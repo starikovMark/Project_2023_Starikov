@@ -1,0 +1,105 @@
+.navbar-mobile
+    display: none
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+.navbar-logo
+    width: 6.625rem
+    height: 6.9375rem
+.navbar-menu
+    display: flex
+    align-items: center
+    list-style: none
+    gap: 1.875rem
+    &-item
+    &-link
+        font-size: .875rem
+        font-style: normal
+        font-weight: 600
+        line-height: 104.7%
+        text-transform: uppercase
+        color: $white
+        transition: 0.2s
+        &:hover
+            color: $blue
+.navbar-link
+    display: flex
+    align-items: center
+    gap: 1.25rem
+    &-account
+        color: $blue
+        font-size: .875rem
+        font-style: normal
+        font-weight: 600
+        line-height: 104.7%
+        text-transform: uppercase
+.navbar-menu-toggle
+    display: none
+@media (max-width: 1170px)
+    .container
+        max-width: 992px
+@media (max-width: 992px)
+    .container
+        max-width: 768px
+    .navbar-menu
+        display: none
+    .navbar-button
+        display: none
+    .navbar-menu-line
+        content: ""
+        width: 100%
+        height: 1px
+        background-color: $white
+        transition: transform 0.3s
+        &:nth-child(2)
+            width: 80%
+    .navbar-light .navbar-menu-line
+        background-color: $white
+    .navbar-menu-toggle
+        width: 5rem
+        height: 4.93rem
+        display: flex
+        align-items: end
+        flex-direction: column
+        justify-content: space-between
+        padding: 2rem 1.6875rem
+    .navbar-mobile.is-open
+        display: block
+    .navbar-mobile
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        overflow-y: auto
+        z-index: 2
+        margin-top: 6.9375rem
+        &.is-open
+            display: block
+        &-menu
+            margin-top: 1.5rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            list-style: none
+            gap: 1.875rem
+            padding: 0
+        &-link
+            font-size: 0.875rem
+            font-style: normal
+            font-weight: 700
+            line-height: 160%
+            text-decoration: none
+            color: #292d33
+    .navbar-link
+        display: none
+.close-menu .navbar-menu-line:nth-child(2)
+    display: none
+.close-menu .navbar-menu-line:nth-child(1)
+    transform: rotate(45deg) translate(5px, 4px)
+.close-menu .navbar-menu-line:nth-child(3)
+    transform: rotate(-45deg) translate(4px, -3px)
