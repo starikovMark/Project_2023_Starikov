@@ -43,6 +43,15 @@ a {
 .section {
   padding: 3.125rem 0;
 }
+.section-title {
+  color: #121214;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
 
 .navbar-mobile {
   display: none;
@@ -278,6 +287,137 @@ a {
   position: absolute;
   left: 0;
   top: 0.625rem;
+}
+
+.routes {
+  background-color: #f7f7f7;
+}
+.routes-title {
+  margin-bottom: 0;
+}
+.routes-wrapper {
+  display: flex;
+  margin-top: 4.1875rem;
+}
+.routes-wrapper-reverse {
+  flex-direction: row-reverse;
+}
+
+.route {
+  display: flex;
+  gap: 1.0625rem;
+}
+.route-line {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #00C2FF;
+  margin-top: 1.1875rem;
+}
+.route-text {
+  max-width: 32.75rem;
+  color: #121214;
+}
+.route-text-title {
+  color: inherit;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.route-text-price {
+  color: inherit;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0.625rem 0 1.25rem 0;
+}
+.route-text-info {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  margin-bottom: 0.625rem;
+}
+.route-subtitle {
+  margin-top: 0.625rem;
+  color: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.8125rem;
+}
+.route-subtext {
+  color: inherit;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+.route-button {
+  display: flex;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+.route-button-primary {
+  background-color: #f7f7f7;
+  color: #00C2FF;
+  border: 1.5px solid #00C2FF;
+  padding: 0.875rem 0;
+  width: 11.25rem;
+  transition: 0.3s;
+}
+.route-button-primary:hover {
+  text-shadow: 1px -1px 1px #00C2FF;
+  box-shadow: 0px 0px 4px #00C2FF;
+}
+.route-button-basic {
+  padding: 0.875rem 0;
+  width: 11.25rem;
+  transition: 0.3s;
+}
+.route-button-basic:hover {
+  text-shadow: 1px -1px 1px #fff;
+  box-shadow: 0px 0px 4px #00C2FF;
+}
+
+.swiper {
+  max-width: 28.125rem;
+  position: relative;
+}
+.swiper-route-image {
+  width: 20.25rem;
+  height: 20.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5625rem;
+}
+
+.slider-button {
+  position: absolute;
+  left: 0;
+  bottom: 1.875rem;
+  display: flex;
+  gap: 0.875rem;
+}
+.slider-button-reverse {
+  left: auto;
+  right: 0;
+  bottom: 4.6875rem;
+}
+.slider-button-prev {
+  background-color: #00C2FF;
+  border-radius: 3.125rem;
+  padding: 0.5rem 0.625rem;
+  cursor: pointer;
+}
+.slider-button-next {
+  background-color: #00C2FF;
+  border-radius: 3.125rem;
+  padding: 0.5rem 0.625rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1170px) {
