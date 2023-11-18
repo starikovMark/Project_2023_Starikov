@@ -423,6 +423,48 @@ a {
   cursor: pointer;
 }
 
+.help {
+  background-image: url("../img/png/bg-help.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.help-title {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: inherit;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+.help-text {
+  color: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 1.6875rem;
+  text-align: center;
+}
+.help-button {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  padding: 0.8125rem;
+}
+
 @media (max-width: 1170px) {
   .container {
     max-width: 992px;
@@ -489,9 +531,33 @@ a {
     width: 15.625rem;
     height: 15.625rem;
   }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .routes-wrapper {
+    margin-top: 2.8125rem;
+  }
+  .route-text-title {
+    font-size: 1.7rem;
+  }
+  .route-text-price {
+    font-size: 1.25rem;
+  }
+  .help-wrapper {
+    gap: 1.875rem;
+  }
+  .help-title {
+    font-size: 1.7rem;
+  }
+  .help-text {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .route-button {
+    flex-direction: column;
   }
 }
