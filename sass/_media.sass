@@ -32,6 +32,11 @@
             position: absolute
             bottom: -0.25rem
             right: -3.125rem
+    .contacts
+        &-wrapper
+            flex-direction: column
+    .maps
+        width: 100%
 @media (max-width: 768px)
     html
         font-size: 14px
@@ -121,6 +126,9 @@
             &-image
                 width: 100%
                 border-radius: .5625rem .5625rem 0 0
+    .contacts
+        &-list
+            grid-template-columns: repeat(1,1fr)
 @media (max-width: 320px)
     .container
         max-width: 280px

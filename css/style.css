@@ -700,6 +700,61 @@ a {
   transform: rotate(-90deg);
 }
 
+.seporator {
+  content: "";
+  max-width: 28.5625rem;
+  height: 0.1875rem;
+  background-color: #00C2FF;
+}
+
+.contacts-map {
+  border: none;
+}
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.125rem;
+  color: #121214;
+}
+.contacts-title {
+  color: inherit;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140.4%;
+}
+.contacts-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.5rem;
+}
+.contacts-list-item {
+  color: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.187%;
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+.contacts-list-link {
+  color: inherit;
+}
+.contacts-list-svg {
+  background-color: #00C2FF;
+  padding: 10px 12px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 50%;
+}
+
+.maps {
+  border: none;
+}
+
 @media (max-width: 1170px) {
   .container {
     max-width: 992px;
@@ -737,6 +792,12 @@ a {
     position: absolute;
     bottom: -0.25rem;
     right: -3.125rem;
+  }
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+  .maps {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -844,6 +905,9 @@ a {
   .offers-card-image {
     width: 100%;
     border-radius: 0.5625rem 0.5625rem 0 0;
+  }
+  .contacts-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 320px) {
