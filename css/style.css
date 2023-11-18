@@ -561,6 +561,52 @@ a {
   border-radius: 50%;
 }
 
+.offers-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+.offers-card {
+  background-color: #f7f7f7;
+  display: flex;
+  position: relative;
+  border-radius: 0.5625rem;
+  gap: 1.75rem;
+  overflow: hidden;
+}
+.offers-card-text {
+  margin-top: 1.5625rem;
+  padding-right: 0.9375rem;
+  max-width: 15.4375rem;
+}
+.offers-card-text-title {
+  color: #00C2FF;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139%;
+  margin-bottom: 1.5rem;
+}
+.offers-card-text-subtitle {
+  color: #121214;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.offers-card-image {
+  width: 16.5rem;
+  height: 19.4375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5625rem 0rem 0rem 0.5625rem;
+}
+.offers-card-svg {
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+}
+
 @media (max-width: 1170px) {
   .container {
     max-width: 992px;
@@ -570,6 +616,12 @@ a {
   }
   .conditions-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .offers-card-image {
+    width: 12.5rem;
+    height: 19.4375rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 992px) {
@@ -587,6 +639,11 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
+  }
+  .offers-svg {
+    position: absolute;
+    bottom: -4px;
+    right: -50px;
   }
 }
 @media (max-width: 768px) {
@@ -620,6 +677,19 @@ a {
   }
   .slider-button-reverse {
     justify-content: flex-start;
+  }
+  .offers-wrapper {
+    flex-direction: column;
+  }
+  .offers-card {
+    width: 100%;
+  }
+  .offers-card-image {
+    width: 16.5rem;
+    height: 19.4375rem;
+  }
+  .offers-svg {
+    right: 0;
   }
 }
 @media (max-width: 576px) {
@@ -658,6 +728,19 @@ a {
   .conditions-wrapper {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 0.9375rem;
+  }
+  .offers-card {
+    flex-direction: column;
+    height: 34.375rem;
+  }
+  .offers-card-text {
+    margin-top: 0;
+    padding-left: 0.9375rem;
+    max-width: 100%;
+  }
+  .offers-card-image {
+    width: 100%;
+    border-radius: 0.5625rem 0.5625rem 0 0;
   }
 }
 @media (max-width: 320px) {

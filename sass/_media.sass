@@ -7,6 +7,12 @@
     .conditions
         &-wrapper
             grid-template-columns: repeat(2, 1fr)
+    .offers
+        &-card
+            &-image
+                width: 12.5rem
+                height: 19.4375rem
+                object-fit: cover
 @media (max-width: 992px)
     html
         font-size: 14px
@@ -21,6 +27,11 @@
             display: grid
             grid-template-columns: repeat(2, 1fr)
             gap: 1.875rem
+    .offers
+        &-svg
+            position: absolute
+            bottom: -4px
+            right: -50px
 @media (max-width: 768px)
     html
         font-size: 14px
@@ -47,6 +58,16 @@
         &-button
             &-reverse
                 justify-content: flex-start
+    .offers
+        &-wrapper
+            flex-direction: column
+        &-card
+            width: 100%
+            &-image
+                width: 16.5rem
+                height: 19.4375rem
+        &-svg
+            right: 0
 @media (max-width: 576px)
     .container
         max-width: 360px
@@ -81,6 +102,17 @@
         &-wrapper
             grid-template-columns: repeat(1, 1fr)
             row-gap: .9375rem
+    .offers
+        &-card
+            flex-direction: column
+            height: 34.375rem
+            &-text
+                margin-top: 0
+                padding-left: .9375rem
+                max-width: 100%
+            &-image
+                width: 100%
+                border-radius: .5625rem .5625rem 0 0
 @media (max-width: 320px)
     .container
         max-width: 280px
