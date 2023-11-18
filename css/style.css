@@ -298,6 +298,7 @@ a {
 .routes-wrapper {
   display: flex;
   margin-top: 4.1875rem;
+  gap: 1.875rem;
 }
 .routes-wrapper-reverse {
   flex-direction: row-reverse;
@@ -386,6 +387,11 @@ a {
 .swiper {
   max-width: 28.125rem;
   position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+.swiper-wrapper {
+  height: 100%;
 }
 .swiper-route-image {
   width: 20.25rem;
@@ -396,16 +402,13 @@ a {
 }
 
 .slider-button {
-  position: absolute;
-  left: 0;
-  bottom: 1.875rem;
+  position: static;
+  margin-top: 0.9375rem;
   display: flex;
   gap: 0.875rem;
 }
 .slider-button-reverse {
-  left: auto;
-  right: 0;
-  bottom: 4.6875rem;
+  justify-content: flex-end;
 }
 .slider-button-prev {
   background-color: #00C2FF;
@@ -423,6 +426,9 @@ a {
 @media (max-width: 1170px) {
   .container {
     max-width: 992px;
+  }
+  .route-line {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -453,20 +459,35 @@ a {
     height: 100%;
   }
   .header-content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    max-width: 300px;
   }
   .header-content-title {
     font-size: 2.5rem;
+    max-width: 300px;
     line-height: normal;
   }
   .header-content-text {
     font-size: 1.2rem;
   }
+  .routes-wrapper {
+    flex-direction: column;
+  }
+  .swiper {
+    max-width: 100%;
+  }
+  .slider-button-reverse {
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 360px;
+  }
+  .swiper-route-image {
+    width: 15.625rem;
+    height: 15.625rem;
   }
 }
 @media (max-width: 320px) {

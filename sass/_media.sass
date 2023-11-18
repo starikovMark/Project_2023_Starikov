@@ -1,6 +1,9 @@
 @media (max-width: 1170px)
     .container
         max-width: 992px
+    .route
+        &-line
+            display: none
 @media (max-width: 992px)
     html
         font-size: 14px
@@ -23,16 +26,32 @@
     .header
         height: 100%
         &-content
-            padding-top: 50px
-            padding-bottom: 50px
+            padding-top: 3.125rem
+            padding-bottom: 3.125rem
+            max-width: 300px
             &-title
                 font-size: 2.5rem
+                max-width: 300px
                 line-height: normal
             &-text
                 font-size: 1.2rem
+    .routes
+        &-wrapper
+            flex-direction: column
+    .swiper
+        max-width: 100%
+    .slider
+        &-button
+            &-reverse
+                justify-content: flex-start
 @media (max-width: 576px)
     .container
         max-width: 360px
+    .swiper
+        &-route
+            &-image
+                width: 15.625rem
+                height: 15.625rem
 @media (max-width: 320px)
     .container
         max-width: 280px

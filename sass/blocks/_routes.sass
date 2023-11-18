@@ -5,6 +5,7 @@
     &-wrapper
         display: flex
         margin-top: 4.1875rem
+        gap: 1.875rem
         &-reverse
             flex-direction: row-reverse
 .route
@@ -76,6 +77,10 @@
 .swiper
     max-width: 28.125rem
     position: relative
+    margin-left: 0
+    margin-right: 0
+    &-wrapper
+        height: 100%
     &-route
         &-image
             width: 20.25rem
@@ -84,15 +89,12 @@
             border-radius: .5625rem
 .slider
     &-button
-        position: absolute
-        left: 0
-        bottom: 1.875rem
+        position: static
+        margin-top: .9375rem
         display: flex
         gap: .875rem
         &-reverse
-            left: auto
-            right: 0
-            bottom: 4.6875rem
+            justify-content: flex-end
         &-prev
             background-color: $blue
             border-radius: 3.125rem
