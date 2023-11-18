@@ -4,6 +4,9 @@
     .route
         &-line
             display: none
+    .conditions
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
 @media (max-width: 992px)
     html
         font-size: 14px
@@ -74,6 +77,10 @@
     .swiper-gallery-image
         width: 15.625rem
         height: 15.625rem
+    .conditions
+        &-wrapper
+            grid-template-columns: repeat(1, 1fr)
+            row-gap: .9375rem
 @media (max-width: 320px)
     .container
         max-width: 280px

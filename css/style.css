@@ -493,15 +493,72 @@ a {
 .gallery-button-next {
   background-color: #00C2FF;
   padding: 0.625rem 0.6875rem;
-  border-radius: 3.125rem;
+  border-radius: 50%;
   cursor: pointer;
 }
 .gallery-button-prev {
   position: static;
   background-color: #00C2FF;
   padding: 0.625rem 0.6875rem;
-  border-radius: 3.125rem;
+  border-radius: 50%;
   cursor: pointer;
+}
+
+.conditions {
+  position: relative;
+  z-index: -1;
+  background-image: url("../img/png/bg-conditions.jpeg");
+}
+.conditions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.45;
+  z-index: -1;
+}
+.conditions-title {
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.25rem;
+  max-width: 31.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  position: relative;
+  z-index: 10;
+}
+.conditions-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+.conditions-card {
+  background-color: #fff;
+  border-radius: 0.5625rem;
+  display: flex;
+  align-items: start;
+  gap: 0.875rem;
+  min-height: 7.1875rem;
+  padding: 0.9375rem 0.9375rem;
+}
+.conditions-card-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #121214;
+}
+.conditions-card-svg {
+  background-color: #00C2FF;
+  padding: 0.625rem;
+  border-radius: 50%;
 }
 
 @media (max-width: 1170px) {
@@ -510,6 +567,9 @@ a {
   }
   .route-line {
     display: none;
+  }
+  .conditions-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 992px) {
@@ -594,6 +654,10 @@ a {
   .swiper-gallery-image {
     width: 15.625rem;
     height: 15.625rem;
+  }
+  .conditions-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0.9375rem;
   }
 }
 @media (max-width: 320px) {
