@@ -1,0 +1,33 @@
+.swiper
+    &-gallery
+        max-width: 100%
+        position: relative
+        display: flex
+        flex-direction: column
+    &-wrapper
+        width: 100%
+        position: relative
+    &-gallery
+        &-image
+            width: 22.5rem
+            height: 22.5rem
+            border-radius: .5625rem
+            object-fit: cover
+.gallery
+    &-button
+        margin-top: 1.6875rem
+        position: static
+        display: flex
+        justify-content: center
+        gap: .9375rem
+        &-next
+            background-color: $blue
+            padding: .625rem .6875rem
+            border-radius: 3.125rem
+            cursor: pointer
+        &-prev
+            position: static
+            background-color: $blue
+            padding: .625rem .6875rem
+            border-radius: 3.125rem
+            cursor: pointer

@@ -53,3 +53,46 @@ const swiperRoute = new Swiper(".swiper-route", {
     },
   },
 });
+const swiperGallery = new Swiper(".swiper-gallery", {
+  autoHeight: true,
+  slideShadows: false,
+  slidesPerView: 3,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: ".gallery-button-next",
+    prevEl: ".gallery-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    280: {
+      slidesPerView: 1,
+
+      centeredSlides: true,
+    },
+    320: {
+      slidesPerView: 2,
+      rotate: 30,
+    },
+    576: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 480px
+    788: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
