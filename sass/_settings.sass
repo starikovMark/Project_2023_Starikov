@@ -6,6 +6,7 @@ html
     scroll-behavior: smooth
 body
     font-family: 'Montserrat', sans-serif
+    position: relative
 .container
     max-width: 1150px
     margin: 0 auto
@@ -35,3 +36,13 @@ a
         line-height: normal
         text-align: center
         margin-bottom: 3.75rem
+.page-button
+    position: fixed
+    right: 1.25rem
+    bottom: 1.25rem
+    background-color: $blue
+    padding: .9375rem
+    z-index: 10
+    border-radius: .5625rem
+    &-svg
+        transform: rotate(90deg)
