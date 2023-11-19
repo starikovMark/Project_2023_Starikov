@@ -1,0 +1,156 @@
+.hero
+    background-color: $bg-color
+    &-wrapper
+        background-color: #fff
+        border-radius: .5625rem
+        padding: 2.8125rem 0
+        margin: 2.8125rem 0
+    &-routes
+        margin-top: 0
+        &-title
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &::after
+                content: ""
+                width: 5rem
+                height: .1875rem
+                background-color: $blue
+    &-container
+        max-width: 60rem
+        margin: 0 auto
+    &-seporator
+        margin: 2.8125rem 0
+    &-title
+        color: $black
+        font-size: 1.5rem
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+    &-advantages
+        &-wrapper
+            margin-top: 1.25rem
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            column-gap: 2.5rem
+        &-card
+            display: flex
+            gap: .9375rem
+        &-text
+            &-title
+                font-size: 1.125rem
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                margin-bottom: .625rem
+            &-subtitle
+                font-size: .875rem
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+    &-walk
+        &-text
+            margin-top: 1.25rem
+            font-size: .875rem
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            color: $black
+            & span
+                color: $blue
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-decoration-line: underline
+.schedule
+    &-title
+        font-size: 1.5rem
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        margin-top: 1.625rem
+        margin-bottom: .75rem
+        & span
+            font-weight: 400
+    &-wrapper
+        display: flex
+        flex-direction: column
+        gap: 1.5625rem
+    &-day
+        display: flex
+        align-items: center
+        gap: 3.4375rem
+        &-date
+            display: flex
+            align-items: center
+            gap: .875rem
+            width: 9.375rem
+        &-number
+            color: #000
+            font-size: 3.125rem
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+        &-week
+            color: #000
+            font-size: .875rem
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+        &-time
+            display: flex
+            gap: .375rem
+            &-link
+                color: #fff
+                font-size: 1.5rem
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                padding: .625rem 1rem
+                background-color: $blue
+                border-radius: .5625rem
+                transition: 0.2s
+                &:hover
+                    background-color: #00C2FF
+                    opacity: 0.7
+.reservation
+    &-info
+        margin-top: 1.75rem
+        display: flex
+        align-items: center
+        gap: 2.8125rem
+        justify-content: flex-end
+        &-price
+            font-size: 1.5rem
+            font-style: normal
+            font-weight: 600
+            line-height: 130%
+        &-button
+            display: flex
+            align-items: center
+            gap: .8125rem
+    &-button
+        &-primary
+            background-color: #fff
+.form
+    margin-top: 1.625rem
+    columns: 2
+    max-width: 46.875rem
+    gap: 2.5rem
+.input
+    &-group
+        display: flex
+        flex-direction: column
+        gap: .625rem
+        margin-bottom: .9375rem
+        &-label
+            font-size: 1rem
+            font-style: normal
+            font-weight: 600
+            text-transform: uppercase
+        &-input
+            height: 2.8125rem
+            border-radius: .5625rem
+            border: .0625rem solid $blue
+            background-color: #fff
+            padding: 0 .625rem

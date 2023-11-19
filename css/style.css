@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
+  color: #121214;
 }
 
 .container {
@@ -31,6 +32,11 @@ ul, li {
 
 a {
   text-decoration: none;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -66,6 +72,10 @@ a {
 }
 .page-button-svg {
   transform: rotate(90deg);
+}
+
+.body-page {
+  background-color: #3F3F3F;
 }
 
 .navbar-mobile {
@@ -241,6 +251,14 @@ a {
   bottom: 0;
   background-color: rgba(6, 13, 22, 0.2509803922);
   z-index: -1;
+}
+.header-page {
+  background-image: none;
+  background-color: #3F3F3F;
+  height: auto;
+}
+.header-page::after {
+  display: none;
 }
 .header-content {
   padding-top: 6.25rem;
@@ -444,12 +462,20 @@ a {
   border-radius: 3.125rem;
   padding: 0.5rem 0.625rem;
   cursor: pointer;
+  transition: 0.2s;
+}
+.slider-button-prev:hover {
+  opacity: 0.7;
 }
 .slider-button-next {
   background-color: #00C2FF;
   border-radius: 3.125rem;
   padding: 0.5rem 0.625rem;
   cursor: pointer;
+  transition: 0.2s;
+}
+.slider-button-next:hover {
+  opacity: 0.7;
 }
 
 .help {
@@ -736,6 +762,9 @@ a {
   background-color: #00C2FF;
 }
 
+.contacts {
+  background-color: #fff;
+}
 .contacts-map {
   border: none;
 }
@@ -786,6 +815,7 @@ a {
 
 .footer {
   padding-bottom: 2.5rem;
+  background-color: #fff;
 }
 .footer-wrapper {
   display: flex;
@@ -823,6 +853,195 @@ a {
   line-height: 126.687%;
   display: flex;
   justify-content: center;
+  margin-top: 0.625rem;
+}
+
+.hero {
+  background-color: #3F3F3F;
+}
+.hero-wrapper {
+  background-color: #fff;
+  border-radius: 0.5625rem;
+  padding: 2.8125rem 0;
+  margin: 2.8125rem 0;
+}
+.hero-routes {
+  margin-top: 0;
+}
+.hero-routes-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-routes-title::after {
+  content: "";
+  width: 5rem;
+  height: 0.1875rem;
+  background-color: #00C2FF;
+}
+.hero-container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.hero-seporator {
+  margin: 2.8125rem 0;
+}
+.hero-title {
+  color: #121214;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero-advantages-wrapper {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.hero-advantages-card {
+  display: flex;
+  gap: 0.9375rem;
+}
+.hero-advantages-text-title {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.625rem;
+}
+.hero-advantages-text-subtitle {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero-walk-text {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #121214;
+}
+.hero-walk-text span {
+  color: #00C2FF;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.schedule-title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 1.625rem;
+  margin-bottom: 0.75rem;
+}
+.schedule-title span {
+  font-weight: 400;
+}
+.schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+.schedule-day {
+  display: flex;
+  align-items: center;
+  gap: 3.4375rem;
+}
+.schedule-day-date {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  width: 9.375rem;
+}
+.schedule-day-number {
+  color: #000;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.schedule-day-week {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.schedule-day-time {
+  display: flex;
+  gap: 0.375rem;
+}
+.schedule-day-time-link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0.625rem 1rem;
+  background-color: #00C2FF;
+  border-radius: 0.5625rem;
+  transition: 0.2s;
+}
+.schedule-day-time-link:hover {
+  background-color: #00C2FF;
+  opacity: 0.7;
+}
+
+.reservation-info {
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 2.8125rem;
+  justify-content: flex-end;
+}
+.reservation-info-price {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.reservation-info-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8125rem;
+}
+.reservation-button-primary {
+  background-color: #fff;
+}
+
+.form {
+  margin-top: 1.625rem;
+  -moz-columns: 2;
+       columns: 2;
+  max-width: 46.875rem;
+  gap: 2.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 0.9375rem;
+}
+.input-group-label {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.input-group-input {
+  height: 2.8125rem;
+  border-radius: 0.5625rem;
+  border: 0.0625rem solid #00C2FF;
+  background-color: #fff;
+  padding: 0 0.625rem;
 }
 
 @media (max-width: 1170px) {
@@ -840,6 +1059,9 @@ a {
     height: 19.4375rem;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .hero-container {
+    max-width: 53.125rem;
   }
 }
 @media (max-width: 992px) {
@@ -871,6 +1093,12 @@ a {
   }
   .footer-list {
     gap: 2rem;
+  }
+  .hero-container {
+    max-width: 46.875rem;
+  }
+  .hero-routes-title::after {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -933,6 +1161,32 @@ a {
     align-items: start;
     gap: 0.625rem;
   }
+  .hero-container {
+    max-width: 31.25rem;
+  }
+  .hero-seporator {
+    margin: 1.5625rem 0;
+  }
+  .hero-routes-title::after {
+    display: block;
+  }
+  .hero-advantages-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.875rem;
+  }
+  .schedule-day {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.625rem;
+  }
+  .schedule-day-time {
+    flex-wrap: wrap;
+  }
+  .reservation-info {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -986,6 +1240,23 @@ a {
   }
   .contacts-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-container {
+    max-width: 80%;
+  }
+  .form {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .reservation-info-button {
+    width: 100%;
+    flex-direction: column;
+  }
+  .reservation-button-primary {
+    width: 100%;
+  }
+  .reservation-button-basic {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {

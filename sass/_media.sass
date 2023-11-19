@@ -13,6 +13,9 @@
                 width: 12.5rem
                 height: 19.4375rem
                 object-fit: cover
+    .hero
+        &-container
+            max-width: 53.125rem
 @media (max-width: 992px)
     html
         font-size: 14px
@@ -40,6 +43,13 @@
     .footer
         &-list
             gap: 2rem
+    .hero
+        &-container
+            max-width: 46.875rem
+        &-routes
+            &-title
+                &::after
+                    display: none
 @media (max-width: 768px)
     html
         font-size: 14px
@@ -89,6 +99,31 @@
             flex-direction: column
             align-items: start
             gap: .625rem
+    .hero
+        &-container
+            max-width: 31.25rem
+        &-seporator
+            margin: 1.5625rem 0
+        &-routes
+            &-title
+                &::after
+                    display: block
+        &-advantages
+            &-wrapper
+                grid-template-columns: repeat(1,1fr)
+                row-gap: 1.875rem
+    .schedule
+        &-day
+            flex-direction: column
+            align-items: start
+            gap: .625rem
+            &-time
+                flex-wrap: wrap
+    .reservation
+        &-info
+            flex-direction: column
+            align-items: start
+            gap: 15px
 @media (max-width: 576px)
     .container
         max-width: 360px
@@ -137,6 +172,21 @@
     .contacts
         &-list
             grid-template-columns: repeat(1,1fr)
+    .hero
+        &-container
+            max-width: 80%
+    .form
+        columns: 1
+    .reservation
+        &-info
+            &-button
+                width: 100%
+                flex-direction: column
+        &-button
+            &-primary
+                width: 100%
+            &-basic
+                width: 100%
 @media (max-width: 320px)
     .container
         max-width: 280px
