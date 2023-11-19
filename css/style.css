@@ -1043,6 +1043,7 @@ hr {
   border: 0.0625rem solid #00C2FF;
   background-color: #fff;
   padding: 0 0.625rem;
+  width: 100%;
 }
 
 @media (max-width: 1170px) {
