@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./js/script.js" defer></script>
+    <title>Базовый</title>
+  </head>
+  <body class="body-page">
+    <header class="header header-page" id="header">
+      <div class="container">
+        <div class="navbar-mobile">
+          <ul class="navbar-mobile-menu">
+            <li class="navbar-menu-item">
+              <a href="./index.html#routes" class="navbar-menu-link"
+                >Маршруты
+              </a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#gallery" class="navbar-menu-link"
+                >Галерея</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#questions" class="navbar-menu-link"
+                >вопрос-ответ</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#contacts" class="navbar-menu-link"
+                >Контакты</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#conditions" class="navbar-menu-link"
+                >Условия</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#offers" class="navbar-menu-link"
+                >Спецпредложения</a
+              >
+            </li>
+          </ul>
+          <!-- /.navbar-menu -->
+        </div>
+        <div class="navbar">
+          <a href="./">
+            <img src="./img/png/logo.png" alt="logo" class="navbar-logo" />
+          </a>
+          <ul class="navbar-menu">
+            <li class="navbar-menu-item">
+              <a href="./index.html#routes" class="navbar-menu-link"
+                >Маршруты</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#gallery" class="navbar-menu-link"
+                >галерея</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#questions" class="navbar-menu-link"
+                >вопрос-ответ</a
+              >
+            </li>
+            <li class="navbar-menu-item">
+              <a href="./index.html#contacts" class="navbar-menu-link"
+                >контакты</a
+              >
+            </li>
+          </ul>
+          <!-- /.navbar-menu -->
+          <div class="navbar-link">
+            <a href="tel:+79069426497" class="navbar-link-button">
+              <svg width="35" height="27" class="phone-svg">
+                <use href="./img/sprites.svg#phone"></use>
+              </svg>
+            </a>
+            <a href="./login.html" class="navbar-link-account"
+              >Личный кабинет</a
+            >
+          </div>
+          <a href="#" class="navbar-menu-toggle">
+            <div class="navbar-menu-line"></div>
+            <div class="navbar-menu-line"></div>
+            <div class="navbar-menu-line"></div>
+          </a>
+        </div>
+        <!-- /.navbar -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="section login">
+      <form action="#" class="login-form">
+        <h1 class="login-title">Авторизация</h1>
+        <div class="login-input-group">
+          <label for="#" class="login-label">логин</label>
+          <input type="text" class="input login-input" />
+        </div>
+        <div class="login-input-group">
+          <label for="#" class="login-label">пароль</label>
+          <input type="password" class="input login-input" />
+        </div>
+        <a href="./account.html" class="button login-button">Войти</a>
+        <p class="login-info">
+          Впервые здесь?<a href="./signup.html">Зарегистрируйся</a>
+        </p>
+      </form>
+      <!-- /.form-login -->
+    </section>
+    <!-- /.section-login -->
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <div class="seporator"></div>
+        <div class="contacts-wrapper">
+          <div class="contacts-info">
+            <h2 class="contacts-title">Контакты</h2>
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <div class="contacts-list-svg">
+                  <svg width="23" height="23">
+                    <use href="./img/sprites.svg#house"></use>
+                  </svg>
+                </div>
+                Город Москва
+              </li>
+              <li class="contacts-list-item">
+                <div class="contacts-list-svg">
+                  <svg width="23" height="23">
+                    <use href="./img/sprites.svg#email"></use>
+                  </svg>
+                </div>
+                <a
+                  href="mailto:supermark2005@mail.ru"
+                  class="contacts-list-link"
+                  >supermark2005@mail.ru</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <div class="contacts-list-svg">
+                  <svg width="23" height="23">
+                    <use href="./img/sprites.svg#tel"></use>
+                  </svg>
+                </div>
+                <a href="tel:+79069426497" class="contacts-list-link"
+                  >+7 906 942 64-97</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <div class="contacts-list-svg">
+                  <svg width="23" height="23">
+                    <use href="./img/sprites.svg#time"></use>
+                  </svg>
+                </div>
+                Пн - Пт: 11:00 - 20:00 <br />
+                Сб - Вс: 10:00 - 21:00
+              </li>
+            </ul>
+          </div>
+          <!-- /.contacts-info -->
+          <div
+            style="position: relative; overflow: hidden"
+            class="contacts-map"
+          >
+            <a
+              href="https://yandex.ru/maps/org/prichal_sofiyskaya_naberezhnaya/71421605052/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >Причал Софийская набережная</a
+            ><a
+              href="https://yandex.ru/maps/213/moscow/category/jetty_/196459817342/?utm_medium=mapframe&utm_source=maps"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >Пристань в Москве</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/?ll=37.616861%2C55.748557&mode=search&oid=71421605052&ol=biz&z=16.94"
+              width="560"
+              height="400"
+              allowfullscreen="true"
+              style="position: relative"
+              class="maps"
+            ></iframe>
+          </div>
+        </div>
+        <!-- /.contacts-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section contacts -->
+    <footer class="footer">
+      <div class="container">
+        <hr class="footer-seporator" />
+        <div class="footer-wrapper">
+          <a href="./" class="footer-logo">
+            <img src="./img/png/logo.png" alt="logo-footer" />
+          </a>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="./index.html#routes" class="footer-list-item-link"
+                >Машруты</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#gallery" class="footer-list-item-link"
+                >Галерея</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#questions" class="footer-list-item-link"
+                >Вопрос-ответ</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#contacts" class="footer-list-item-link"
+                >Контакты</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#conditions" class="footer-list-item-link"
+                >Условия</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#offers" class="footer-list-item-link"
+                >Спецпредложения</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr class="footer-seporator" />
+        <!-- /.footer-wrapper -->
+        <span class="footer-copy">&copy; Московский теплоход 2023</span>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <a href="#header" class="page-button">
+      <svg width="28" height="20" class="page-button-svg">
+        <use href="./img/sprites.svg#slider-arrow-left"></use></svg
+    ></a>
+    <script src="./js/swiper-bundle.min.js"></script>
+  </body>
+</html>
