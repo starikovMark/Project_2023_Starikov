@@ -1107,6 +1107,99 @@ hr {
   margin-left: 0.3125rem;
 }
 
+.account-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.account-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.account-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account-list-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.account-list-value {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 9px;
+  border: 1px solid #00C2FF;
+  padding: 14px 14px 15px;
+}
+.account-subtitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.account-card {
+  padding: 20px;
+  border-radius: 9px;
+  border: 2px solid #00C2FF;
+  background-color: #f7f7f7;
+  width: 390px;
+}
+.account-card-info {
+  display: flex;
+  gap: 15px;
+}
+.account-card-info-image {
+  border-radius: 9px;
+  max-width: 159px;
+  height: 159px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account-card-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.account-card-name {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.account-card-value {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.account-card-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.account-button {
+  width: 130px;
+  padding: 10px 0;
+}
+.account-history-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1170px) {
   .container {
     max-width: 992px;
@@ -1250,6 +1343,9 @@ hr {
     align-items: start;
     gap: 15px;
   }
+  .account-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1323,6 +1419,22 @@ hr {
   }
   .login-form {
     max-width: 22.5rem;
+  }
+  .account-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .account-card {
+    width: 100%;
+  }
+  .account-card-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-card-info-image {
+    max-width: 100%;
+  }
+  .account-title {
+    margin-bottom: 1.875rem;
   }
 }
 @media (max-width: 320px) {
