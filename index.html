@@ -61,7 +61,9 @@
                 <use href="./img/sprites.svg#phone"></use>
               </svg>
             </a>
-            <a href="./login.html" class="navbar-link-account">Личный кабинет</a>
+            <a href="./login.html" class="navbar-link-account"
+              >Личный кабинет</a
+            >
           </div>
           <a href="#" class="navbar-menu-toggle">
             <div class="navbar-menu-line"></div>
@@ -479,7 +481,7 @@
         <div class="help-wrapper">
           <h2 class="help-title">Затрудняетесь выбрать прогулку?</h2>
           <p class="help-text">Оставьте заявку и наш менеджер поможет Вам!</p>
-          <a href="" class="button help-button">Оставить заявку</a>
+          <a href="#" class="button help-button">Оставить заявку</a>
         </div>
         <!-- /.help-wrapper -->
       </div>
@@ -924,8 +926,39 @@
     <!-- /.footer -->
     <a href="#header" class="page-button">
       <svg width="28" height="20" class="page-button-svg">
-        <use href="./img/sprites.svg#slider-arrow-left"></use></svg
-    ></a>
+        <use href="./img/sprites.svg#slider-arrow-left"></use>
+      </svg>
+    </a>
+    <div class="modal modal-application">
+      <a href="#" class="modal-application-button">
+        <svg width="28" height="20" class="modal-svg">
+          <use href="./img/sprites.svg#close"></use>
+        </svg>
+      </a>
+      <form action="#" class="modal-form">
+        <h2 class="form-title modal-title">Оставить заявку</h2>
+        <div class="modal-form-group">
+          <label for="#" class="modal-form-label">Как к Вам обращаться?</label>
+          <input type="text" class="input modal-input" />
+          <div class="modal-form-svg">
+            <svg width="20" height="20">
+              <use href="./img/sprites.svg#man"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-form-group">
+          <label for="#" class="modal-form-label">Телефон или WhatsApp</label>
+          <input type="text" class="input modal-input" />
+          <div class="modal-form-svg">
+            <svg width="20" height="20">
+              <use href="./img/sprites.svg#modal-tel"></use>
+            </svg>
+          </div>
+        </div>
+        <a href="#" class="button modal-button">Отправить</a>
+      </form>
+    </div>
+    <div class="body-dark"></div>
     <script src="./js/swiper-bundle.min.js"></script>
   </body>
 </html>

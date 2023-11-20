@@ -1,0 +1,51 @@
+.modal
+    &-application
+        display: none
+        &.is-open
+            display: block
+            position: fixed
+            left: 50%
+            top: 50%
+            z-index: 100
+            background-color: #fff
+            transform: translate(-50%, -50%)
+            padding: 1.25rem 2rem
+            border-radius: .5625rem
+            width: 22.5rem
+        &-button
+            display: flex
+            justify-content: flex-end
+    &-title
+        font-weight: 600
+        margin: 1.875rem 0
+    &-form
+        display: flex
+        flex-direction: column
+        &-group
+            display: flex
+            flex-direction: column
+            gap: .625rem
+            position: relative
+            margin-bottom: .75rem
+        &-label
+            font-size: .875rem
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+        &-svg
+            position: absolute
+            top: 2.3125rem
+            left: .625rem
+    &-input
+        border-radius: .5625rem
+        border: .0625rem solid #787878
+        height: 2.5rem
+        padding-left: 2.5rem
+    &-button
+        padding: .875rem 0
+        text-transform: uppercase
+        font-size: .875rem
+        font-style: normal
+        font-weight: 600
+        margin-top: .9375rem
+        margin-bottom: 3.125rem
