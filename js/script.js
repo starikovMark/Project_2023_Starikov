@@ -10,53 +10,6 @@ const bodyDark = document.querySelector(".body-dark");
 const closeModalBtn = document.querySelector(".modal-application-button");
 const modalBtn = document.querySelector(".modal-button");
 
-const openMenu = (event) => {
-  // Стрелочная функция открывания меню
-  menu.classList.add("is-open"); // Добавляем класс к меню
-  mMenuToggle.classList.add("close-menu"); // Добавляем класс к кнопке меню
-  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
-  header.classList.add("is-open");
-};
-const closeMenu = (event) => {
-  // Функция закрытия меню
-  menu.classList.remove("is-open"); // Удаляем класс с меню
-  mMenuToggle.classList.remove("close-menu"); // Удаляем класс с кнопки меню
-  document.body.style.overflow = ""; // Страница двигается
-  header.classList.remove("is-open");
-};
-mMenuToggle.addEventListener("click", (event) => {
-  // Функция при клике на кнопку меню
-  event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
-  menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
-});
-const openModal = () => {
-  applicationModal.classList.add("is-open");
-  bodyDark.style.display = "block";
-  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
-};
-const closeModal = () => {
-  applicationModal.classList.remove("is-open");
-  bodyDark.style.display = "none";
-  document.body.style.overflow = ""; // Когда меню открыто, страница не двигается
-};
-applicationBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  openModal();
-});
-closeModalBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  closeModal();
-});
-modalBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  closeModal();
-});
-mobileItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    closeMenu();
-  });
-});
-
 const swiperRoute = new Swiper(".swiper-route", {
   autoHeight: true,
   slidesPerView: 1,
@@ -132,6 +85,52 @@ const swiperGallery = new Swiper(".swiper-gallery", {
       slidesPerView: 5,
     },
   },
+});
+const openMenu = (event) => {
+  // Стрелочная функция открывания меню
+  menu.classList.add("is-open"); // Добавляем класс к меню
+  mMenuToggle.classList.add("close-menu"); // Добавляем класс к кнопке меню
+  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
+  header.classList.add("is-open");
+};
+const closeMenu = (event) => {
+  // Функция закрытия меню
+  menu.classList.remove("is-open"); // Удаляем класс с меню
+  mMenuToggle.classList.remove("close-menu"); // Удаляем класс с кнопки меню
+  document.body.style.overflow = ""; // Страница двигается
+  header.classList.remove("is-open");
+};
+mMenuToggle.addEventListener("click", (event) => {
+  // Функция при клике на кнопку меню
+  event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
+  menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
+});
+const openModal = () => {
+  applicationModal.classList.add("is-open");
+  bodyDark.style.display = "block";
+  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
+};
+const closeModal = () => {
+  applicationModal.classList.remove("is-open");
+  bodyDark.style.display = "none";
+  document.body.style.overflow = ""; // Когда меню открыто, страница не двигается
+};
+applicationBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  openModal();
+});
+closeModalBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  closeModal();
+});
+modalBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  closeModal();
+});
+mobileItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    closeMenu();
+  });
 });
 
 console.log(mobileItem);
