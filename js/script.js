@@ -4,14 +4,23 @@ const menu = document.querySelector(".navbar-mobile");
 const modalDialog = document.querySelector(".modal.dialog");
 const header = document.querySelector(".header");
 const mobileItem = document.querySelectorAll(".navbar-menu-link");
+
 const applicationBtn = document.querySelector(".help-button");
 const applicationModal = document.querySelector(".modal-application");
+
 const bodyDark = document.querySelector(".body-dark");
 const closeModalBtn = document.querySelector(".modal-application-button");
 const modalBtn = document.querySelector(".modal-button");
 
+const resetBtn = document.querySelector(".button-reset");
+const accountCard = document.querySelector(".account-card");
+
+const payBtn = document.querySelector(".pay-button");
+const payModal = document.querySelector(".pay-modal");
+const payCloseBtn = document.querySelector(".pay-close-button");
 const swiperRoute = new Swiper(".swiper-route", {
   autoHeight: true,
+  loop: true,
   slidesPerView: 1,
   effect: "coverflow",
   coverflowEffect: {
@@ -86,6 +95,17 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     },
   },
 });
+const openPayModal = () => {
+  payModal.classList.add("is-open");
+  bodyDark.style.display = "block";
+  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
+};
+const closePayModal = () => {
+  payModal.classList.remove("is-open");
+  bodyDark.style.display = "none";
+  document.body.style.overflow = ""; // Когда меню открыто, страница не двигается
+};
+
 const openMenu = (event) => {
   // Стрелочная функция открывания меню
   menu.classList.add("is-open"); // Добавляем класс к меню
@@ -115,15 +135,11 @@ const closeModal = () => {
   bodyDark.style.display = "none";
   document.body.style.overflow = ""; // Когда меню открыто, страница не двигается
 };
-applicationBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  openModal();
-});
-closeModalBtn.addEventListener("click", (event) => {
+modalBtn.addEventListener("click", (event) => {
   event.preventDefault();
   closeModal();
 });
-modalBtn.addEventListener("click", (event) => {
+closeModalBtn.addEventListener("click", (event) => {
   event.preventDefault();
   closeModal();
 });
@@ -132,5 +148,27 @@ mobileItem.forEach((item) => {
     closeMenu();
   });
 });
-
-console.log(mobileItem);
+if (applicationBtn) {
+  applicationBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    openModal();
+  });
+}
+if (payCloseBtn) {
+  payCloseBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    closePayModal();
+  });
+}
+if (resetBtn) {
+  resetBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    accountCard.style.display = "none";
+  });
+}
+if (payBtn) {
+  payBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    openPayModal();
+  });
+}

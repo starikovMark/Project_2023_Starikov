@@ -1121,98 +1121,106 @@ hr {
 }
 
 .account-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 46px;
+  margin-bottom: 2.875rem;
 }
 .account-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 .account-list-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .account-list-name {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
 }
 .account-list-value {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  border-radius: 9px;
-  border: 1px solid #00C2FF;
-  padding: 14px 14px 15px;
+  border-radius: 0.5625rem;
+  border: 0.0625rem solid #00C2FF;
+  padding: 0.875rem 0.875rem 0.9375rem;
 }
 .account-subtitle {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 .account-card {
-  padding: 20px;
-  border-radius: 9px;
-  border: 2px solid #00C2FF;
+  padding: 1.25rem;
+  border-radius: 0.5625rem;
+  border: 0.125rem solid #00C2FF;
   background-color: #f7f7f7;
   width: 390px;
 }
 .account-card-info {
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 .account-card-info-image {
-  border-radius: 9px;
-  max-width: 159px;
-  height: 159px;
+  border-radius: 0.5625rem;
+  max-width: 9.9375rem;
+  height: 9.9375rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .account-card-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .account-card-name {
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 0.3125rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
 }
 .account-card-value {
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 0.625rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
 }
 .account-card-button {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .account-button {
-  width: 130px;
-  padding: 10px 0;
+  width: 8.125rem;
+  padding: 0.625rem 0;
 }
 .account-history-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   flex-wrap: wrap;
 }
 
+.modal-form-number {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-form-number .input {
+  max-width: 8.75rem;
+  padding-left: 0.625rem;
+}
 .modal-application {
   display: none;
 }
