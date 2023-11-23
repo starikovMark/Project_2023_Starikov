@@ -1233,6 +1233,9 @@ hr {
   flex-wrap: wrap;
 }
 
+.modal {
+  filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.25));
+}
 .modal-form-number {
   display: flex;
   justify-content: space-between;
@@ -1267,6 +1270,14 @@ hr {
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+.modal-form-textarea {
+  border-radius: 0.5625rem;
+  border: 0.0625rem solid #787878;
+  height: 6.25rem;
+  padding-left: 0.625rem;
+  padding-top: 0.625rem;
+  resize: none;
 }
 .modal-form-group {
   display: flex;

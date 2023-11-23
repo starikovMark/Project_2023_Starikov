@@ -18,6 +18,15 @@ const accountCard = document.querySelector(".account-card");
 const payBtn = document.querySelector(".pay-button");
 const payModal = document.querySelector(".pay-modal");
 const payCloseBtn = document.querySelector(".pay-close-button");
+
+const questionCards = document.querySelectorAll(".questions-text-card");
+const questionTexts = document.querySelectorAll(".questions-text-card-hidden");
+const questionSvgs = document.querySelectorAll(".quest-svg");
+
+const modalQuest = document.querySelector(".modal-questions");
+const questionsBtn = document.querySelector(".questions-asking-button");
+const questionsCloseBtn = document.querySelectorAll(".questions-close-button");
+
 const swiperRoute = new Swiper(".swiper-route", {
   autoHeight: true,
   loop: true,
@@ -95,6 +104,14 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     },
   },
 });
+questionCards.forEach((questionCard, index) => {
+  questionCard.addEventListener("click", (event) => {
+    event.preventDefault();
+    questionCard.classList.toggle("is-open");
+    questionTexts[index].classList.toggle("is-open");
+    questionSvgs[index].classList.toggle("is-open");
+  });
+});
 const openPayModal = () => {
   payModal.classList.add("is-open");
   bodyDark.style.display = "block";
@@ -124,6 +141,28 @@ mMenuToggle.addEventListener("click", (event) => {
   // Функция при клике на кнопку меню
   event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
   menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
+});
+const openQuestModal = (event) => {
+  modalQuest.classList.add("is-open");
+  bodyDark.style.display = "block";
+  document.body.style.overflow = "hidden"; // Когда меню открыто, страница не двигается
+};
+const closeQuestModal = (event) => {
+  modalQuest.classList.remove("is-open");
+  bodyDark.style.display = "none";
+  document.body.style.overflow = ""; // Когда меню открыто, страница не двигается
+};
+if (questionsBtn) {
+  questionsBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    openQuestModal();
+  });
+}
+questionsCloseBtn.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeQuestModal();
+  });
 });
 const openModal = () => {
   applicationModal.classList.add("is-open");
