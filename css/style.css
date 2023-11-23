@@ -125,6 +125,28 @@ hr {
 .navbar-menu-link:hover {
   color: #00C2FF;
 }
+.navbar-menu-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu-account {
+  color: #00C2FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.navbar-menu-phone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
 
 .navbar-link {
   display: flex;
@@ -157,16 +179,12 @@ hr {
   .navbar-menu {
     display: none;
   }
-  .header.is-open::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    opacity: 0.7;
-    z-index: 1;
+  .navbar-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #787878;
+    padding-bottom: 0.625rem;
   }
   .navbar-button {
     display: none;
@@ -195,6 +213,7 @@ hr {
   }
   .navbar-mobile.is-open {
     display: block;
+    background-color: #3F3F3F;
   }
   .navbar-mobile {
     width: 100%;
@@ -206,17 +225,17 @@ hr {
     bottom: 0;
     overflow-y: auto;
     z-index: 2;
-    margin-top: 6.9375rem;
+    padding-top: 6.9375rem;
   }
   .navbar-mobile.is-open {
     display: block;
   }
   .navbar-mobile-menu {
+    max-width: 768px;
+    margin: 0 auto;
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     list-style: none;
     gap: 1.875rem;
     padding: 0;
@@ -449,6 +468,7 @@ hr {
   position: relative;
   margin-left: 0;
   margin-right: 0;
+  z-index: 0;
 }
 .swiper-wrapper {
   height: 100%;
@@ -1343,7 +1363,7 @@ hr {
   html {
     font-size: 14px;
   }
-  .container {
+  .container, .navbar-mobile-menu {
     max-width: 576px;
   }
   .header {
@@ -1430,7 +1450,7 @@ hr {
   }
 }
 @media (max-width: 576px) {
-  .container {
+  .container, .navbar-mobile-menu {
     max-width: 360px;
   }
   .swiper-route-image {
@@ -1520,7 +1540,7 @@ hr {
   }
 }
 @media (max-width: 320px) {
-  .container {
+  .container, .navbar-mobile-menu {
     max-width: 280px;
   }
   .route-button {

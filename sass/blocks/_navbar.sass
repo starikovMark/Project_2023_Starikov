@@ -23,6 +23,23 @@
         transition: 0.2s
         &:hover
             color: $blue
+    &-bottom
+        display: flex
+        flex-direction: column
+.navbar-menu-account
+    color: $blue
+    font-size: 16px
+    font-style: normal
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 1.25rem
+.navbar-menu-phone
+    display: flex
+    gap: 10px
+    align-items: center
+    font-size: 20px
+    color: $white
+    font-weight: 600
 .navbar-link
     display: flex
     align-items: center
@@ -45,18 +62,12 @@
         max-width: 768px
     .navbar-menu
         display: none
-    .header
-        &.is-open
-            &::before
-                content: ""
-                position: absolute
-                top: 0
-                left: 0
-                right: 0
-                bottom: 0
-                background-color: #000
-                opacity: 0.7
-                z-index: 1
+        &-item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-bottom: 1px solid #787878
+            padding-bottom: .625rem
     .navbar-button
         display: none
     .navbar-menu-line
@@ -79,6 +90,7 @@
         padding: 2rem 1.6875rem
     .navbar-mobile.is-open
         display: block
+        background-color: $bg-color
     .navbar-mobile
         width: 100%
         height: 100%
@@ -89,15 +101,15 @@
         bottom: 0
         overflow-y: auto
         z-index: 2
-        margin-top: 6.9375rem
+        padding-top: 6.9375rem
         &.is-open
             display: block
         &-menu
+            max-width: 768px
+            margin: 0 auto
             margin-top: 1.5rem
             display: flex
             flex-direction: column
-            align-items: center
-            justify-content: center
             list-style: none
             gap: 1.875rem
             padding: 0
